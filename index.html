@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Front Page</title>
+  <link rel="stylesheet" href="front.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-image: url("https://i.ytimg.com/vi/ZG4JQX4BO9A/maxresdefault.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .button-container {
+      text-align: center;
+      margin-top: -10px; /* Adjust this value to move button upwards */
+    }
+
+    .navigate-btn {
+      padding: 6px 20px;
+      font-size: 20px;
+      color: white;
+      background-color: #007bff;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    .navigate-btn:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <div class="button-container">
+    <button class="navigate-btn" onclick="goToIndex()">Go to Home</button>
+  </div>
+
+  <script>
+    function goToIndex() {
+      window.location.href = 'main.html';  // Replace 'index.html' with the actual URL of your home page
+    }
+  </script>
+</body>
+</html>
